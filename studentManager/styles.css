@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    overflow: hidden;   
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('background3.jpg'); /* Zamijenite sa svojim linkom */
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#mainPart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#dataForm {
+    width: 30%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+input[type="text"] {
+    font-family: 'Montserrat', sans-serif;
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.action-button {
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    background: #402977;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.action-button:hover {
+    background: #423983;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
