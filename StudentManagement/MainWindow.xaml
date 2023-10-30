@@ -1,0 +1,35 @@
+﻿<Window x:Class="StudentManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Student Management System" Height="594" Width="875">
+    <Grid RenderTransformOrigin="0.502,0.446" Background="#FF1EFAE5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Student Management System" FontSize="24" HorizontalAlignment="Center" Margin="10" />
+
+        <StackPanel Grid.Row="5" Margin="438,31,31,90" Grid.RowSpan="2">
+            <TextBox Name="idTextBox" Width="100" Height="30" Margin="5" />
+            <TextBox Name="imeTextBox" Width="100" Height="30" Margin="5" />
+            <TextBox Name="prezimeTextBox" Width="100" Height="30" Margin="5" />
+            <TextBox Name="adresaTextBox" Width="100" Height="30" Margin="5" />
+            <TextBox Name="gradTextBox" Width="100" Height="30" Margin="5" />
+        </StackPanel>
+
+        <DataGrid Grid.Row="2" Name="studentDataGrid" AutoGenerateColumns="True" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" Margin="42,31,483,90" Grid.RowSpan="2" Background="#FFD2F4EE" />
+
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" Margin="0,454,0,0" Height="44" VerticalAlignment="Top" Width="368" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
+            <Button Content="Prvi" Click="Prvi_Click" Margin="5" />
+            <Button Content="Prethodni" Click="Prethodni_Click" Margin="5" />
+            <Button Content="Unos" Click="Unos_Click" Margin="5" />
+            <Button Content="Ažuriranje" Click="Azuriranje_Click" Margin="5" />
+            <Button Content="Brisanje" Click="Brisanje_Click" Margin="5" />
+            <Button Content="Sljedeći" Click="Sljedeci_Click" Margin="5" />
+            <Button Content="Zadnji" Click="Zadnji_Click" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>
+
